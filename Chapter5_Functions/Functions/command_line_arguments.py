@@ -1,8 +1,8 @@
-import argparse
+import argparse  # https://docs.python.org/3/library/argparse.html
 
 
 def check_for_boolean_value(val):
-    if val == "True":
+    if val == "True" or val == "true":
         return True
     else:
         return False
@@ -18,7 +18,7 @@ def main() -> None:
     )
     parser.add_argument(
         "--admin",
-        help="Are your an admin? (bool)",
+        help="Are you an admin? (bool)",
         type=check_for_boolean_value,
         required=False,
         default=False,
@@ -32,6 +32,7 @@ def main() -> None:
     print(age, type(age))
     print(name, type(name))
     print(is_admin, type(is_admin))
+    print(f"Hello {name}, you are {age} years old")
 
 
 if __name__ == "__main__":
