@@ -17,6 +17,7 @@ def timing(fn: Callable) -> Callable:
         time_duration = end_time - start_time
         print(f"Function {fn.__name__} took {time_duration:.6f}s")
         return fn_result
+
     return timer
 
 

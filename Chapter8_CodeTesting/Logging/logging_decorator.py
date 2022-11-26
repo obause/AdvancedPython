@@ -9,14 +9,11 @@ def log(fn):
         time_str = datetime.utcnow().strftime("%H:%M:%S")
         try:
             fn_result = fn(*args, **kwargs)
-            print(
-                f"Called function {fn.__name__} at {time_str}"
-            )
+            print(f"Called function {fn.__name__} at {time_str}")
             return fn_result
         except Exception as e:
-            print(
-                f"Called function {fn.__name__} at {time_str} with an exception: '{e}'"
-            )
+            print(f"Called function {fn.__name__} at {time_str} with Exception '{e. __class__.__name__}: {e}'")
+
     return logger
 
 
