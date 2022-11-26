@@ -1,5 +1,5 @@
-from math import sqrt
 from functools import total_ordering
+from math import sqrt
 
 
 @total_ordering
@@ -13,10 +13,10 @@ class Vector2D:
         return self.__repr__()
 
     def __repr__(self):
-        return f'vector.Vector2D({self.x}, {self.y})'
+        return f"vector.Vector2D({self.x}, {self.y})"
 
     def __str__(self):
-        return f'({self.x}, {self.y})'
+        return f"({self.x}, {self.y})"
 
     def __bool__(self):
         return bool(abs(self))

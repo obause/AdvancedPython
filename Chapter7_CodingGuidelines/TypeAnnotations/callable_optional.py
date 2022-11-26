@@ -10,10 +10,7 @@ def print_list(values: List[int]) -> None:
     print(values)
 
 
-def function(
-    values: List[int],
-    print_fn: Callable[[List[int]], None]
-) -> None:
+def function(values: List[int], print_fn: Callable[[List[int]], None]) -> None:
     print_fn(values)
 
 

@@ -5,7 +5,7 @@ from typing import Callable
 from typing import Union
 
 
-def f(*args: int, **kwargs: Union[int , float]) -> None:
+def f(*args: int, **kwargs: Union[int, float]) -> None:
     print(f"{args}, {kwargs}")
 
 
